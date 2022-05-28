@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -23,6 +24,7 @@ const SearchBar = () => {
 
     console.log(repos);
     return (
+        <>
         <div style={{padding: "20px"}}>
             <input type="text" 
                 placeholder="Search"
@@ -31,6 +33,8 @@ const SearchBar = () => {
             />
             <button onClick={handleClick}>Search</button>
         </div>
+        <Results />
+        </>
     );
 };
 
