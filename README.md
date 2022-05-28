@@ -4,7 +4,7 @@
 
 ## User Stories
 
-<details><summary>Show list</summary>
+<details><summary>Show User Stories</summary>
 
 ~~~~~~
 As a user
