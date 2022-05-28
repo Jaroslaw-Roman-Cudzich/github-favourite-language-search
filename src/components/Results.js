@@ -1,7 +1,11 @@
 import React from "react";
 
 const Results = () => {
-    return <h2>Results</h2>;
+    return (
+    <ul>
+        <li>Favourite Programming Language</li>
+    </ul>
+    );
 };
 
 export default Results;
