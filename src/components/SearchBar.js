@@ -1,4 +1,6 @@
+import axios from "axios";
 import React, { useState } from "react";
+import axios from "axios";
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -7,8 +9,11 @@ const SearchBar = () => {
         setSearchInput(e.target.value);
     };
 
-    const handleClick = () => {
+    const handleClick = async () => {
         console.log(searchInput);
+
+        const result = await axios(``)
+
     };
 
     return (
