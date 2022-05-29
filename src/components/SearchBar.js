@@ -26,7 +26,7 @@ const SearchBar = () => {
         <>
         <div style={{padding: "20px"}}>
             <input type="text" 
-                placeholder="Search"
+                placeholder="Enter GitHub username"
                 value={searchInput}
                 onChange={handleChange} 
             />
