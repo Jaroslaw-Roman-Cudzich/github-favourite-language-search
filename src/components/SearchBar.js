@@ -22,7 +22,6 @@ const SearchBar = () => {
         }
     };
 
-    console.log(repos);
     return (
         <>
         <div style={{padding: "20px"}}>
@@ -33,7 +32,7 @@ const SearchBar = () => {
             />
             <button onClick={handleClick}>Search</button>
         </div>
-        <Results />
+        <Results repos={repos} />
         </>
     );
 };
