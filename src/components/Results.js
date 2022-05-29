@@ -6,9 +6,9 @@ const Results = (props) => {
 
     const listRepos = 
         repos.length !== 0 ? ( 
-            repos.data.map((item) => <li key={item.id}>{item.name}</li>)
-            ) : (
-                <li>No repositories have been located in this GitHub user's account.</li>
+            repos.data.map((item) => <li>{item.name}</li>)
+        ) : (
+            <li>No repositories have been located in this GitHub user's account.</li>
             );
 
     return <ul>{listRepos}</ul>;
