@@ -11,8 +11,10 @@ const Results = (props) => {
 
             <li>Please enter a valid GitHub username as this one does not exist.</li>      
         ) : (
-            (repos.data.map(function(el) {
+            ((repos.data.map(function(el) {
                 return el.language;
+              })).filter(function(language, index, arr) {
+                return language != null
               })).reduce((previousLanguage, currentLanguage, currentIndex, arr) =>
               arr.filter(language => language === previousLanguage).length >
               arr.filter(language => language === currentLanguage).length
