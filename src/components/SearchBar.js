@@ -25,12 +25,18 @@ const SearchBar = () => {
     return (
         <>
         <div style={{padding: "20px"}}>
-            <input type="text" 
+        <form>
+            <input 
+                id="username"
+                name="username"
+                type="text" 
                 placeholder="Enter GitHub username"
                 value={searchInput}
-                onChange={handleChange} 
+                required
+                onChange={handleChange}
             />
-            <button onClick={handleClick}>Search</button>
+            <button type="button" onClick={handleClick}>Search</button>
+        </form>
         </div>
         <Results repos={repos} />
         </>
