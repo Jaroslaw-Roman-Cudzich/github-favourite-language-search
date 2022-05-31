@@ -2,7 +2,7 @@
 
 **GitHub Favourite Language Search is a web application designed for a user to be able to enter a random GitHub username and that GitHub user's most frequently used (favourite) programming language is displayed.**
 
-## User Stories
+## User Stories - MVP
 
 <details><summary>Show User Stories</summary>
 
@@ -15,13 +15,56 @@ I would like to enter a random username and have that user's most frequently use
 </details>
 
 
-# Getting Started with Create React App
+## User Stories - Edge Cases
+
+<details><summary>Show User Stories where Edge Cases are covered</summary>
+
+~~~~~~
+As a user
+In the event where the GitHub user's most frequently used or all programming languages are "null"
+I would like the output of the search to not incorporate the "null" labelled language data at all
+~~~~~~
+
+</details>
+
+
+## User Stories - Edge Cases - Next stage of the project
+
+<details><summary>Show User Stories where Edge Cases will be covered in the next stage of the project</summary>
+
+~~~~~~
+As a user
+In the event where there is no output result of the search (All languages are labelled as null or no repositories in GitHub account)
+I would like the search result to be a randomly selected programming language
+~~~~~~
+
+</details>
+
+## Code Logic
+
+Please see below the logic for the planning of the code script for all the above user story scenarios, leading up to and including this next stage of the project.:
+
+![](./src/images/searchResultLogic.png)
+
+
+## Features to be added in the next stage of the project.:
+
+- More separation of concerns.  Cleaning the code. 
+- A seperate file to handle the styling of the page based on the className.  An App.css file. 
+- More styling to be added to the page (HTML, CSS).
+- A pop up to appear if nothing entered into SearchBar stating that the field must be filled.  Done by the "required" attribute being added to the SearchBar HTML.
+- A list of different GitHub usernames to appear matching the beginning characters of the username being typed as the user types the name.
+
+
+# Tech Stack - Instructions
+
+# Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, please run:
 
 ### `npm start`
 
@@ -85,3 +128,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Axios
+
+Please install Axios with the following command.:
+
+### `npm install axios`

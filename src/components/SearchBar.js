@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Results from "./Results";
+import SearchResults from "./SearchResults";
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -25,10 +25,10 @@ const SearchBar = () => {
     return (
         <>
         <div 
-        style={{padding: "20px"}}>
+        style={{padding: "40px"}}>
         <form>
             <input 
-                style={{borderBlockStyle: "solid"}}
+                style={{borderBlockEndColor: "grey"}}
                 id="username"
                 name="username"
                 type="text" 
@@ -40,7 +40,7 @@ const SearchBar = () => {
             <button type="button" onClick={handleClick}>Search</button>
         </form>
         </div>
-        <Results repos={repos} />
+        <SearchResults repos={repos} />
         </>
     );
 };

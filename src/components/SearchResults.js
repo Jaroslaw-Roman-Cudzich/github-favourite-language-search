@@ -1,13 +1,11 @@
 import React from "react";
 
-const Results = (props) => {
+const SearchResults = (props) => {
     const { repos } = props;
     console.log("GitHub user's repos: ", repos.data);
 
     const mostFreqLanguage = 
         repos.length === 0 ? ( 
- 
-                // repos.data.map((item) => <li key={item.id}>{item.language}</li>)
 
             <span>Please enter a valid GitHub username.</span>      
         ) : (
@@ -25,4 +23,4 @@ const Results = (props) => {
     return <ul>{mostFreqLanguage}</ul>;
 };
 
-export default Results;
+export default SearchResults;
