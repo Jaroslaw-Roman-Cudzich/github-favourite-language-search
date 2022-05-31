@@ -24,13 +24,15 @@ const SearchBar = () => {
 
     return (
         <>
-        <div style={{padding: "20px"}}>
+        <div 
+        style={{padding: "20px"}}>
         <form>
             <input 
+                style={{borderBlockStyle: "solid"}}
                 id="username"
                 name="username"
                 type="text" 
-                placeholder="Enter GitHub username"
+                placeholder="GitHub username"
                 value={searchInput}
                 required
                 onChange={handleChange}

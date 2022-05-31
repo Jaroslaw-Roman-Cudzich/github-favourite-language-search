@@ -9,7 +9,7 @@ const Results = (props) => {
  
                 // repos.data.map((item) => <li key={item.id}>{item.language}</li>)
 
-            <li>Please enter a valid GitHub username as this one does not exist.</li>      
+            <span>Please enter a valid GitHub username.</span>      
         ) : (
             ((repos.data.map(function(el) {
                 return el.language;
