@@ -1,0 +1,11 @@
+.search-bar-button {
+    background-color: rgb(234, 3, 195);
+}
+
+.search-results-region {
+    background-color: rgba(26, 5, 122, 0.943);
+}
+
+.search-input-field {
+    border-style:ridge
+}

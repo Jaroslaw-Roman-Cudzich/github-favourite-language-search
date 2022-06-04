@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import "./SearchBar.css";
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -24,11 +25,10 @@ const SearchBar = () => {
 
     return (
         <>
-        <div 
+        <div className="search-results-region"
         style={{padding: "40px"}}>
         <form>
-            <input 
-                style={{borderBlockEndColor: "grey"}}
+            <input className="search-input-field"
                 id="username"
                 name="username"
                 type="text" 
@@ -37,7 +37,7 @@ const SearchBar = () => {
                 required
                 onChange={handleChange}
             />
-            <button type="button" onClick={handleClick}>Search</button>
+            <button className="search-bar-button" type="button" onClick={handleClick}>Search</button>
         </form>
         </div>
         <SearchResults repos={repos} />
