@@ -40,6 +40,8 @@ const SearchBar = () => {
             <button className="search-bar-button" type="button" onClick={handleClick}>Search</button>
         </form>
         </div>
+        <br></br>
+        <br></br>
         <SearchResult repos={repos} />
         </>
     );
