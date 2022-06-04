@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import SearchResults from "./SearchResults";
+import SearchResult from "./SearchResult";
 import "./SearchBar.css";
 
 const SearchBar = () => {
@@ -40,7 +40,7 @@ const SearchBar = () => {
             <button className="search-bar-button" type="button" onClick={handleClick}>Search</button>
         </form>
         </div>
-        <SearchResults repos={repos} />
+        <SearchResult repos={repos} />
         </>
     );
 };
