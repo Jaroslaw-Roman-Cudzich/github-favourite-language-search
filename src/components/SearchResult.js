@@ -8,9 +8,9 @@ const SearchResult = (props) => {
     const mostFreqLanguage = 
         repos.length === 0 ? ( 
 
-            <span>Please ensure that the GitHub username is valid and in existence.</span>      
+            <span className="invalid-search-input">Please ensure that the GitHub username is valid and in existence.</span>      
         ) : (
-            ` The GitHub user's (most frequently used) programming language is: ${((repos.data.map(function(el) {
+            `The GitHub user's (most frequently used) programming language is: ${((repos.data.map(function(el) {
                 return el.language;
               })).filter(function(language, index, arr) {
                 return language != null

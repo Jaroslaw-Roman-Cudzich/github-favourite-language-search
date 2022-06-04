@@ -1,4 +1,8 @@
 .search-result {
-    background-color: rgb(121, 128, 211);
+    background-color: rgba(34, 75, 144, 0.943);
     width:fit-content
+}
+
+.invalid-search-input {
+    color: white
 }
