@@ -1,8 +1,12 @@
+.search-result-region {
+    background-color: rgba(26, 5, 122, 0.943);
+    width: fit-content;
+}
+
 .search-result {
-    background-color: rgba(34, 75, 144, 0.943);
-    width:fit-content
+    color: white;
 }
 
 .invalid-search-input {
-    color: white
+    color: white;
 }
