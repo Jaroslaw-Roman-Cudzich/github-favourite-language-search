@@ -8,7 +8,7 @@ const SearchResult = (props) => {
     
     if (repos === undefined){
       return <div className="search-result-region">
-        <h4 className="invalid-search-input-error">This search input is not valid.  Please type in a valid GitHub username.</h4>
+        <h4 className="invalid-search-input-error">This search input is invalid.  Please type in a valid GitHub username.</h4>
         </div>;
     };
 
