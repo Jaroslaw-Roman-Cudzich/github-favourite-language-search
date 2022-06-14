@@ -3,6 +3,15 @@ import "./SearchResult.css";
 
 const SearchResult = (props) => {
     const { repos } = props;
+
+
+    
+    if (repos === undefined){
+      return <div className="search-result-region">
+        <h4 className="invalid-search-input-error">This search input is not valid.  Please type in a valid GitHub username.</h4>
+        </div>;
+    };
+
     console.log("GitHub user's repos: ", repos.data);
 
     const mostFreqLanguage = 

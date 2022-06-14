@@ -19,6 +19,7 @@ const SearchBar = () => {
 
         setRepos(result);
         } catch (err) {
+            setRepos(undefined);
             console.log(err)
         }
     };

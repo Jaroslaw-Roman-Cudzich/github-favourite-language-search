@@ -10,3 +10,7 @@
 .invalid-search-input {
     color: white;
 }
+
+.invalid-search-input-error {
+    color: white;
+}
